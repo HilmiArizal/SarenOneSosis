@@ -1,0 +1,12 @@
+@import '../../index.scss';
+
+
+.footer{
+    height: 30vh;
+    background-color: $colorGrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontSigmar;
+    font-size: 30px;
+}

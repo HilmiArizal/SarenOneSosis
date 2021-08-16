@@ -1,0 +1,19 @@
+.app{
+    min-height: 100vh;
+    background: url(./Assets/Image/backgound.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.app::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(114, 114, 114, 0.6);
+}
