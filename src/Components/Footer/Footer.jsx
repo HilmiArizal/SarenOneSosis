@@ -49,7 +49,6 @@ function Footer() {
         <div className="col-md">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.540321531671!2d107.57695771477302!3d-6.94540699498204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8b40e363c6b%3A0x4228645d0ad7b9b2!2sSarenOne%20Office!5e0!3m2!1sid!2sid!4v1629109352422!5m2!1sid!2sid"
-            allowfullscreen=""
             loading="lazy"
             className="map"
             title="SarenOne Office"
@@ -60,10 +59,10 @@ function Footer() {
             Get Exlusive <strong> digital marketing</strong> updates straight to
             your inbox.
           </div>
-          <div class="input-group mb-3 mt-3">
+          <div className="input-group mb-3 mt-3">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Email Address"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"

@@ -12,20 +12,18 @@ function Header() {
 
   const handleScroll = () => {
     if (window.scrollY > 600) {
-      setAddClass(
-        "navbar navbar-expand-lg navbar-light bg-light fixed-top scroll"
-      );
+      setAddClass(true);
     } else {
-      setAddClass("navbar navbar-expand-lg navbar-light bg-light fixed-top");
+      setAddClass(false);
     }
   };
 
   return (
     <div className="header">
-      <nav onScroll={handleScroll} className={addClass}>
+      <nav onScroll={handleScroll} className={`navbar navbar-expand-lg navbar-light bg-light fixed-top ${addClass ? "scroll" : ""}`}>
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
-            <img src={Logo} alt="img-logo" className="img-logo" />
+            <img src={Logo} alt="img-logo" className="img-logo" width="100%" />
             <div>
               <div>CV. Heaven Sentosa</div>
               <div>SarenOne</div>
@@ -67,12 +65,12 @@ function Header() {
                   <li> Product</li>
                 </Link>
                 <Link
-                   activeClass="link-active"
-                   to="section-team"
-                   spy={true}
-                   smooth={true}
-                   offset={-30}
-                   duration={100}
+                  activeClass="link-active"
+                  to="section-team"
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={100}
                 >
                   <li> Team</li>
                 </Link>
