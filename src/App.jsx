@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import "./App.scss";
+import DetailProduct from "./Pages/Product/DetailProduct/DetailProduct";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ function App() {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 2000);
     };
 
     fetchLoading();
@@ -31,6 +32,7 @@ function App() {
           <Header />
           <Switch>
             <Route path="/" component={Home} exact />
+            <Route path="/detailproduct/:id" component={DetailProduct} />
           </Switch>
           <Footer />
         </div>
